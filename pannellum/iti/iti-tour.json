@@ -1,0 +1,414 @@
+﻿{
+    "default": {
+        "author": "Fabio Mascia",
+        "firstScene": "atrio1",
+        "sceneFadeDuration": 1000,
+		"autoLoad": true,
+		"orientationOnByDefault" : false,
+		"preview": "./img/atrio_1.jpg"
+		
+    },
+    
+    "scenes": {
+        "boh": {
+            "title": "Atrio 2",
+            "type": "cubemap",
+            "cubeMap": [
+                "./examplepanocube0.jpg",
+                "./examplepanocube1.jpg",
+                "./examplepanocube2.jpg",
+                "./examplepanocube3.jpg",
+                "./examplepanocube4.jpg",
+                "./examplepanocube5.jpg"
+            ],
+            "hotSpots": [
+                {
+                    "pitch": -12,
+                    "yaw": 170,
+                    "type": "info",
+                    "text": "This is Jordan Pond, located in Acadia National Park."
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -50,
+                    "type": "info",
+                    "text": "This is a link.",
+                    "URL": "https://github.com/mpetroff/pannellum"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -60,
+                    "type": "scene",
+                    "text": "Pond",
+                    "sceneId": "pond"
+                }
+            ]
+        },
+
+        "atrio1": {
+           
+            "panorama": "./img/atrio_1.jpg",
+			"yaw": 20,
+            "hotSpots": [
+                {
+                    "pitch": -12,
+                    "yaw": 170,
+                    "type": "info",
+                    "text": "una bella scuola"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 65,
+                    "type": "scene",
+                    "text": "Informatica ed Elettrotecnica",
+                    "sceneId": "atrio2"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -35,
+                    "type": "scene",
+                    "text": "Chimica e Meccanica",
+                    "sceneId": "atrio3"
+                }
+            ]
+        },
+        "atrio2": {
+            "title": "Informatica",
+            "panorama": "./img/atrio_2.jpg",
+			"yaw": 240,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Uscita",
+                    "sceneId": "atrio1"
+                },
+				{
+                    "pitch": 0,
+                    "yaw": 240,
+                    "type": "scene",
+                    "text": "Corridoio Informatica ed Elettrotecnica",
+                    "sceneId": "CorridoioInformatica1"
+                }
+            ]
+        },
+    
+  	 "atrio3": {
+            "title": "atrio intermedio chimica meccanica",
+            "panorama": "./img/intermedio_atrio_chimica_macchinette.jpg",
+			"yaw" : 300,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 50,
+                    "type": "scene",
+                    "text": "Uscita",
+                    "sceneId": "atrio1"
+                },
+				{
+                    "pitch": 0,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Meccanica",
+                    "sceneId": "Atrio_meccanica"
+                },
+				{
+                    "pitch": 0,
+                    "yaw": 300,
+                    "type": "scene",
+                    "text": "Sali al piano di chimica",
+                    "sceneId": "CorridoioChimicaIntermedio"
+                }
+            ]
+        },
+    
+   "CorridoioChimicaIntermedio": {
+             "title": "Corridoio Chimica Intermedio",
+             "panorama": "./img/intermedio_atrio_chimica.jpg",
+			 "yaw" : 200,
+             "hotSpots": [              
+				  {
+                     "pitch": 0,
+                     "yaw": 200,
+                     "type": "scene",
+                     "text": "Corridoio Chimica",
+                     "sceneId": "CorridoioChimicaPrimoPiano"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": -700,
+                     "type": "scene",
+                     "text": "atrio intermedio chimica meccanica",
+                     "sceneId": "atrio3"
+                 }
+             ]
+         },
+     
+     
+	 "CorridoioChimicaPrimoPiano": {
+             "title": "Corridoio Chimica Primo Piano",
+             "panorama": "./img/chimica_corridoio_1.jpg",
+			 "yaw" : 300,
+             "hotSpots": [
+                {
+                     "pitch": 0,
+                     "yaw": 250, 
+                     "type": "scene",
+                     "text": "Laboratorio Chimica 1",
+                     "sceneId": "LaboratorioChimica1"
+                },
+				
+				{
+                     "pitch": 0,
+                     "yaw": 400,
+                     "type": "scene",
+                     "text": "Torna alle scale per l'atrio",
+                     "sceneId": "CorridoioChimicaIntermedio"
+                },
+				{
+                     "pitch": 0,
+                     "yaw": 270,
+                     "type": "scene",
+                     "text": "Laboratorio Chimica  E Biologia",
+                     "sceneId": "CorridoioChimica2PrimoPiano"
+                }
+				 
+             ]
+         },
+     
+	 "LaboratorioChimica2": {
+             "title": "Laboratorio Chimica  ",
+             "panorama": "./img/lab_chimica_1.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": 100,
+                     "type": "scene",
+                     "text": "Corridoio Chimica",
+                     "sceneId": "CorridoioChimicaPrimoPiano"
+                 }		 
+             ]
+         },
+     
+	  "LaboratorioChimica1": {
+             "title": "LaboratorioChimica1 ",
+             "panorama": "./img/lab_chimica_2.jpg",
+             "hotSpots": [
+               
+				 {
+                     "pitch": 0,
+                     "yaw": 100,
+                     "type": "scene",
+                     "text": "Corridoio Chimica",
+                     "sceneId": "CorridoioChimicaPrimoPiano"
+                 }
+             ]
+         },
+   
+	 "CorridoioChimica2PrimoPiano": {
+             "title": "Corridoio Chimica 2 ",
+             "panorama": "./img/chimica_corridoio_2.jpg",
+			 "yaw" : 200,
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": 180,
+                     "type": "scene",
+                     "text": "Laboratorio Biologia",
+                     "sceneId": "LaboratorioBiologia"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": 28,
+                     "type": "scene",
+                     "text": "Torna Al Corridoio ",
+                     "sceneId": "CorridoioChimicaPrimoPiano"
+                 }
+				 
+             ]
+         },
+      "CorridoioInformatica1": {
+             "title": "Corridoio Informatica 1 ",
+             "panorama": "./img/intermedio_atrio_inf_1.jpg",
+			 "yaw" : 250,
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": 270,
+                     "type": "scene",
+                     "text": "Laboratori Informatica ed Elettrotecnica",
+                     "sceneId": "CorridoioInformatica2"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": 120,
+                     "type": "scene",
+                     "text": "Torna nell'atrio ",
+                     "sceneId": "atrio2"
+                 }
+				 
+             ]
+         },
+		   "CorridoioInformatica2": {
+             "title": "Corridoio Informatica 1 ",
+             "panorama": "./img/intermedio_atrio_inf_2.jpg",
+			 "yaw" : 180,
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": 200,
+                     "type": "scene",
+                     "text": "Laboratorio Elettrotecnica 1",
+                     "sceneId": "LaboratorioElettrotecnica1"
+                 },				 
+				 {
+                     "pitch": 0,
+                     "yaw": 180,
+                     "type": "scene",
+                     "text": "Vai nei Laboratori Di informatica",
+                     "sceneId": "CorridoioInformatica3"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": -350,
+                     "type": "scene",
+                     "text": "Torna nell'atrio ",
+                     "sceneId": "CorridoioInformatica1"
+                 }
+				 
+             ]
+         },
+		   "LaboratorioElettrotecnica1": {
+             "title": "Laboratorio Elettrotecnica 1 ",
+             "panorama": "./img/lab_ele_1.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": -500,
+                     "type": "scene",
+                     "text": "Torna Al Corridoio",
+                     "sceneId": "CorridoioInformatica2"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": 500,
+                     "type": "scene",
+                     "text": "Laboratorio Elettrotecnica 2",
+                     "sceneId": "LaboratorioElettrotecnica2"
+                 }
+             ]
+         },
+		 "Atrio_meccanica": {
+             "title": "Intermedio atrio meccanica ",
+             "panorama": "./img/intermedio_atrio_meccanica.jpg",
+             "hotSpots": [
+                  {
+                     "pitch": 0,
+                     "yaw": 100,
+                     "type": "scene",
+                     "text": "Meccanica ",
+                     "sceneId": "Atrio_meccanica2"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": -100,
+                     "type": "scene",
+                     "text": "Torna nell'atrio ",
+                     "sceneId": "atrio2"
+                 }
+			]
+		},
+		
+		"Atrio_meccanica2": {
+             "title": "Atrio meccanica ",
+             "panorama": "./img/meccanica.jpg",
+             "hotSpots": [
+                  {
+                     "pitch": 0,
+                     "yaw": 270,
+                     "type": "scene",
+                     "text": "Meccanica Laboratori ",
+                     "sceneId": "CorridoioMeccanica"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": 120,
+                     "type": "scene",
+                     "text": "Meccanica Laboratori ",
+                     "sceneId": "Atrio_meccanica"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": 50,
+                     "type": "scene",
+                     "text": "Torna nell atrio ",
+                     "sceneId": "Atrio_meccanica"
+                 }
+			]
+		},
+		 "LaboratorioElettrotecnica2": {
+             "title": "Laboratorio Elettrotecnica 1 ",
+             "panorama": "./img/lab_ele_2.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": -600,
+                     "type": "scene",
+                     "text": "Torna Al Corridoio Per L'atrio",
+                     "sceneId": "CorridoioInformatica2"
+                 }
+             ]
+         },
+		 "CorridoioInformatica3": {
+             "title": "Corridoio Informatica ",
+             "panorama": "./img/corridoio_inf.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": -100,
+                     "type": "scene",
+                     "text": " Laboratorio Informatica",
+                     "sceneId": "LaboratorioInformatica"
+                 },
+				 {
+                     "pitch": 0,
+                     "yaw": 380,
+                     "type": "scene",
+                     "text": " Torna Al Corridoio Per L'atrio",
+                     "sceneId": "CorridoioInformatica2"
+                 }
+             ]
+         },
+		 "LaboratorioInformatica": {
+             "title": "Corridoio Informatica ",
+             "panorama": "./img/lab_inf.jpg",
+             "hotSpots": [
+                 
+				 {
+                     "pitch": 0,
+                     "yaw": -150,
+                     "type": "scene",
+                     "text": " Torna Al Corridoio Per L'atrio",
+                     "sceneId": "CorridoioInformatica3"
+                 }
+             ]
+         },
+	 "LaboratorioBiologia": {
+             "title": "LaboratorioBiologia ",
+             "panorama": "./img/lab_biologia.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": 100,
+                     "type": "scene",
+                     "text": "Torna Al Corridoio",
+                     "sceneId": "CorridoioChimica2PrimoPiano"
+                 }
+             ]
+         }
+	}
+ }
+ 
+
+ 
