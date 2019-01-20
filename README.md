@@ -1,7 +1,4 @@
-# tourvirtuale_angioy
-## tour virtuale of I.T.I. Angioy school
-
-# Tour virtuale dei laboratori dell'istituto I.T.I. G.M. Angioy di Sassari
+## Tour virtuale dei laboratori dell'istituto I.T.I. G.M. Angioy di Sassari
 ## Progetto realizzato per I.T.I. in Vetrina 2019
 
 - Sviluppo software: Fabio Mascia
