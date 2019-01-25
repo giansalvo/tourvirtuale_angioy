@@ -231,18 +231,18 @@
       "CorridoioInformatica1": {
              "title": "Corridoio Informatica 1 ",
              "panorama": "./img/intermedio_atrio_inf_1.jpg",
-			 "yaw" : 250,
+			 "yaw" : 0,
              "hotSpots": [
                  {
                      "pitch": 0,
-                     "yaw": 270,
+                     "yaw": 0,
                      "type": "scene",
                      "text": "Laboratori Informatica ed Elettrotecnica",
                      "sceneId": "CorridoioInformatica2"
                  },
 				 {
                      "pitch": 0,
-                     "yaw": 120,
+                     "yaw": 170,
                      "type": "scene",
                      "text": "Torna nell'atrio ",
                      "sceneId": "atrio2"
@@ -252,26 +252,34 @@
          },
 		   "CorridoioInformatica2": {
              "title": "Corridoio Informatica 1 ",
-             "panorama": "./img/intermedio_atrio_inf_2.jpg",
 			 "yaw" : 180,
+             "panorama": "./img/intermedio_atrio_inf_2.jpg",
+			
              "hotSpots": [
                  {
                      "pitch": 0,
                      "yaw": 200,
+                     "type": "scene",
+                     "text": "Aula Magna",
+                     "sceneId": "AulaMagna"
+                 },	
+{
+                     "pitch": 0,
+                     "yaw": 180,
                      "type": "scene",
                      "text": "Laboratorio Elettrotecnica 1",
                      "sceneId": "LaboratorioElettrotecnica1"
                  },				 
 				 {
                      "pitch": 0,
-                     "yaw": 180,
+                     "yaw": 170,
                      "type": "scene",
                      "text": "Vai nei Laboratori Di informatica",
                      "sceneId": "CorridoioInformatica3"
                  },
 				 {
                      "pitch": 0,
-                     "yaw": -350,
+                     "yaw": 10,
                      "type": "scene",
                      "text": "Torna nell'atrio ",
                      "sceneId": "CorridoioInformatica1"
@@ -281,11 +289,12 @@
          },
 		   "LaboratorioElettrotecnica1": {
              "title": "Laboratorio Elettrotecnica 1 ",
+			 "yaw": 500,
              "panorama": "./img/lab_ele_1.jpg",
              "hotSpots": [
                  {
                      "pitch": 0,
-                     "yaw": -500,
+                     "yaw": -3000,
                      "type": "scene",
                      "text": "Torna Al Corridoio",
                      "sceneId": "CorridoioInformatica2"
@@ -299,29 +308,46 @@
                  }
              ]
          },
+		 "AulaMagna": {
+             "title": "AulaMagna ",
+			 "yaw": 20,
+             "panorama": "./img/aula_magna.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw":  20,
+                     "type": "scene",
+                     "text": "Torna Al Corridoio",
+                     "sceneId": "CorridoioInformatica2"
+                 }
+				 
+             ]
+         },
 		 "Atrio_meccanica": {
              "title": "Intermedio atrio meccanica ",
+			 "yaw" : -170,
              "panorama": "./img/intermedio_atrio_meccanica.jpg",
              "hotSpots": [
                   {
                      "pitch": 0,
-                     "yaw": 100,
+                     "yaw": -170,
                      "type": "scene",
                      "text": "Meccanica ",
                      "sceneId": "Atrio_meccanica2"
                  },
 				 {
                      "pitch": 0,
-                     "yaw": -100,
+                     "yaw": 20,
                      "type": "scene",
                      "text": "Torna nell'atrio ",
-                     "sceneId": "atrio2"
+                     "sceneId": "atrio1"
                  }
 			]
 		},
 		
 		"Atrio_meccanica2": {
              "title": "Atrio meccanica ",
+			 "yaw" : 135,
              "panorama": "./img/meccanica.jpg",
              "hotSpots": [
                   {
@@ -329,14 +355,14 @@
                      "yaw": 270,
                      "type": "scene",
                      "text": "Meccanica Laboratori ",
-                     "sceneId": "CorridoioMeccanica"
+                     "sceneId": "MeccanicaTecnologia"
                  },
 				 {
                      "pitch": 0,
                      "yaw": 120,
                      "type": "scene",
                      "text": "Meccanica Laboratori ",
-                     "sceneId": "Atrio_meccanica"
+                     "sceneId": "MacchineFluido"
                  },
 				 {
                      "pitch": 0,
@@ -353,15 +379,42 @@
              "hotSpots": [
                  {
                      "pitch": 0,
-                     "yaw": -600,
+                     "yaw": 600,
                      "type": "scene",
                      "text": "Torna Al Corridoio Per L'atrio",
                      "sceneId": "CorridoioInformatica2"
                  }
              ]
          },
+		  "MeccanicaTecnologia": {
+             "title": "MeccanicaTecnologia ",
+             "panorama": "./img/mec2.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": 600,
+                     "type": "scene",
+                     "text": "Torna Al Corridoio Per L'atrio",
+                     "sceneId": "Atrio_meccanica2"
+                 }
+             ]
+         },
+		  "MacchineFluido": {
+             "title": "MacchineFluido ",
+             "panorama": "./img/mec1.jpg",
+             "hotSpots": [
+                 {
+                     "pitch": 0,
+                     "yaw": 600,
+                     "type": "scene",
+                     "text": "Torna Al Corridoio Per L'atrio",
+                     "sceneId": "Atrio_meccanica"
+                 }
+             ]
+         },
 		 "CorridoioInformatica3": {
              "title": "Corridoio Informatica ",
+			 "yaw" : -100,
              "panorama": "./img/corridoio_inf.jpg",
              "hotSpots": [
                  {
@@ -373,7 +426,7 @@
                  },
 				 {
                      "pitch": 0,
-                     "yaw": 380,
+                     "yaw": -50,
                      "type": "scene",
                      "text": " Torna Al Corridoio Per L'atrio",
                      "sceneId": "CorridoioInformatica2"
@@ -382,12 +435,13 @@
          },
 		 "LaboratorioInformatica": {
              "title": "Corridoio Informatica ",
+			 "yaw" : -10,
              "panorama": "./img/lab_inf.jpg",
              "hotSpots": [
                  
 				 {
                      "pitch": 0,
-                     "yaw": -150,
+                     "yaw": -20,
                      "type": "scene",
                      "text": " Torna Al Corridoio Per L'atrio",
                      "sceneId": "CorridoioInformatica3"
